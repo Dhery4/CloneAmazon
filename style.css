@@ -1,0 +1,308 @@
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    border: border-box; /*isse jo border hai woh line ke andar he count hoga alag se nhi hoga*/
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex; /*sab line mei aa jayenge*/
+    align-items: center;
+    justify-content: space-evenly; /*yeh poore navbar ko evenly space de dega*/
+}
+.navlogo{
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url(amazon_logo.png);
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+/* BOX2 */
+
+.addfirst{
+    color: #cccccc;
+    font-size: 0.85rem; /*rem matlab root value ka 0.85% ho jayega*/
+    margin-left: 15px;
+}
+
+.addicon{
+    display: flex;
+    align-items: center;
+}
+
+.addsec{
+    
+    font-size: 1rem;
+    margin-left: 20px;
+    
+}
+
+/* box3 */
+.navsearch:hover{
+    border: 2px solid orange;
+}
+.navsearch{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 620px;
+    border-radius: 4px; /*halka sa curve ho jayega search bar*/
+}
+
+.searchselect{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    /* border-radius: 4px; */ /*isse chaaro taraf se curve ho jayega*/
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none; /*isse select ka bydefault border remove ho jaayega*/
+}
+
+.searchinput{
+    width: 100%; /*100% dene se jo beech mei spaces left hoti hai woh nhi hogi or poora search bar ek saath chipka hua hoga*/
+    font-size: 1rem;
+    border: none;
+}
+
+.searchicon{
+    width: 45px;
+    display: flex; /*humesha parent container ko dete hai in order to adjust something*/
+    justify-content: center; /*isse horizontally center mei aayega*/
+    align-items: center; /*isse vertically center mei aayega*/
+    font-size: 1.2rem;
+    background-color: rgb(255, 174, 0);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #0f1110;
+}
+
+/* BOX4 */
+.country{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flag{
+    background-color: #0f1110;
+    color: white;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+
+/* BOX5 */
+.signone{
+    font-size: 0.8rem;
+}
+
+.signtwo{
+    font-size: 0.85rem;
+    font-weight: 700; /*bold kar dega yeh*/
+}
+
+/* BOX6 */
+.navcart i{
+    font-size: 30px;
+}
+
+.navcart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/**panel**/
+.panel{
+    height: 40px;
+    color: white;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-opt p{   /*iska matlab hai jitne bhi paragraphs panel-opt ke andar hai un sabmei yeh change ho jaaye*/
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+.panel-opt{
+    width: 70%; /*yeh 70 percent width occupy krega even though waha pe koi text nhi likha*/
+    font-size: 0.9rem;
+
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* HERO SECTION */
+.hero-section{
+    background-image: url(toys.jpg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;  /*picture ke end mei chala jayega text */  
+}
+
+.h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-msg{
+    height: 40px;
+    width: 80%;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    /* position: relative; /*yeh iss bar ko neeche laane ke liye likha hai*/
+    /* top: 540px;
+    left: 100px; */
+    margin-bottom: 25px;
+
+}
+.hero-msg a{
+    color: #007185;
+}
+
+/* BOXES */
+
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap; /*yeh boht saare boxes ko equally baat dega */
+    justify-content:center;
+    background-color:rgb(221, 208, 25);
+}
+
+.box{
+    border: 2px solid black;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 20px;
+}
+
+.img{
+    height: 300px;
+    background-size: cover ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content a {
+    color: #007185;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 15px;
+}
+
+.panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.panel2{
+    display: flex; /*isliye kiya kyuki hume sab row mei chahiye*/
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    
+}
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+ul p{
+    font-weight: 700;
+}
+
+ul a {
+    color: #dddddd;
+    display: block; /*yeh saare ab single line mei columnwise aa jayenge*/
+    /* list-style-type: none; yeh ismei likhne se kaam nhi karega unordered list mei likhna  hoga */
+    font-size: 0.9rem;
+    margin-top: 13px;
+    text-decoration: none;
+}
+
+.panel3{
+    height: 70px;
+    background-color: #222f3d;
+    color: white;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    background-image: url(amazon_logo.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+
+.panel4{
+    /*display: flex;
+    justify-content: space-evenly;
+    align-items: center;  */
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.8rem;
+    text-align: center;
+   
+}
+
+.pages{
+    
+    color: white;
+    padding: 20px;
+ 
+}
+.copyright{
+    padding-top: 0px;
+}
+ 
+.pages a{
+    
+    color: white;
+}
